@@ -25,6 +25,20 @@ $access_input = elgg_view('input/access', array('name' => 'access_id', 'value' =
 $submit_input = elgg_view('input/submit', array('name' => 'submit', 'value' => elgg_echo('save')));
 $submit_input .= ' '.elgg_view('input/button', array('name' => 'cancel', 'id' => 'polls_edit_cancel', 'type'=> 'button', 'value' => elgg_echo('cancel')));
 
+$poll_open_poll = elgg_get_plugin_setting('open_poll','polls');
+if (!$poll_open_poll || $poll_open_poll <> 'no') {
+    $open_poll_input = '<p>';
+	if ($vars['fd']['open_poll']) {
+		$open_poll_input .= elgg_view('input/checkbox',array('name'=>'open_poll','value'=>1,'checked'=>'checked'));
+	} else {
+		$open_poll_input .= elgg_view('input/checkbox',array('name'=>'open_poll','value'=>1));
+	}
+	$open_poll_input .= elgg_echo('polls:open_poll_label');
+    $open_poll_input .= '</p>';
+} else {
+    $open_poll_input = '';
+}
+
 $poll_front_page = elgg_get_plugin_setting('front_page','polls');
 
 if(elgg_is_admin_logged_in() && ($poll_front_page == 'yes')) {
@@ -62,6 +76,7 @@ echo <<<__HTML
 			$tag_input
 		</p>
 		$front_page_input
+                $open_poll_input
 		<p>
 			<label>$access_label</label><br />
 			$access_input

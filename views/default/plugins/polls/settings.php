@@ -94,4 +94,14 @@ $body .= elgg_view('input/radio',array('name'=>'params[front_page]','value'=>$po
 
 $body .= '<br />';
 
+$polls_open_poll = elgg_get_plugin_setting('open_poll', 'polls');
+if (!$polls_open_poll) {
+	$polls_open_poll = 'yes';
+}
+
+$body .= elgg_echo('polls:settings:open_poll:title');
+$body .= '<br />';
+$body .= elgg_view('input/radio',array('name'=>'params[open_poll]','value'=>$polls_open_poll,'options'=>$yn_options));
+
+$body .= '<br />';
 echo $body;

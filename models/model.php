@@ -191,6 +191,7 @@ function polls_prepare_edit_body_vars($poll = NULL) {
 		'question' => NULL,
 		'tags' => NULL,
 		'front_page' => NULL,
+		'open_poll' => NULL,
 		'access_id' => ACCESS_DEFAULT,
 		'guid' => NULL,
 	);

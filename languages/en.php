@@ -48,6 +48,7 @@
 			'polls:settings:group_access:admins' => "group owners and admins only",
 			'polls:settings:group_access:members' => "any group member",
 			'polls:settings:front_page:title' => "Admins can set a front page poll (requires theme support)",
+			'polls:settings:open_poll:title' => "Allow to make open polls (log user votes)",
 			'polls:none' => "No polls found.",
 			'polls:permission_error' => "You do not have permission to edit this poll.",
 			'polls:vote' => "Vote",
@@ -58,6 +59,7 @@
 			'polls:settings:site_access:all' => "Any logged-in user",
 			'polls:can_not_create' => "You do not have permission to create polls.",
 			'polls:front_page_label' => "Place this poll on the front page.",
+			'polls:open_poll_label' => "Log user votes.",
 		/**
 	     * poll widget
 	     **/

@@ -48,6 +48,7 @@
 			'polls:settings:group_access:admins' => "владельцы группы и администраторы",
 			'polls:settings:group_access:members' => "любой участник группы",
 			'polls:settings:front_page:title' => "Администраторы могут помещать опросы на главной странице (требуется поддержка темы)",
+			'polls:settings:open_poll:title' => "Разрешить делать открытые опросы (сохранять варианты ответов)?",
 			'polls:none' => "---",
 			'polls:permission_error' => "У вас нет прав на изменение этого опроса.",
 			'polls:vote' => "Голосовать",
@@ -58,6 +59,7 @@
 			'polls:settings:site_access:all' => "любой пользователь",
 			'polls:can_not_create' => "У вас нет прав для создание опросов.",
 			'polls:front_page_label' => "Поместите этот опрос на главной странице.",
+			'polls:open_poll_label' => "Открытый опрос, сохранять пользователей и их варианты ответов.",
 		/**
 	     * poll widget
 	     **/

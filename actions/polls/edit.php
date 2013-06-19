@@ -13,6 +13,7 @@ elgg_make_sticky_form('polls');
 $question = get_input('question');
 $number_of_choices = (int) get_input('number_of_choices',0);
 $front_page = get_input('front_page');
+$open_poll = get_input('open_poll');
 $tags = get_input('tags');
 $access_id = get_input('access_id');
 $container_guid = get_input('container_guid');
@@ -52,6 +53,7 @@ if ($guid) {
 		
 			$poll->question = $question;
 			$poll->title = $question;
+                        $poll->open_poll = (!$open_poll) ? 0 : 1;
 				
 			if (!$poll->save()) {
 				register_error(elgg_echo("polls:error"));
