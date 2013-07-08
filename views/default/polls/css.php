@@ -97,6 +97,17 @@
 	margin-bottom: 10px;
 }
 
+.polls-vote-label {
+    cursor: pointer;
+}
+.polls-vote-label:hover {
+    color: red;
+    }
+
+.polls-users-voted {
+    padding: 0px 5px;
+}
+
 .polls-group-widget-box {
 	border: 1px solid #CCCCCC;
 	padding: 5px;
