@@ -59,7 +59,7 @@
 			'polls:settings:site_access:all' => "Any logged-in user",
 			'polls:can_not_create' => "You do not have permission to create polls.",
 			'polls:front_page_label' => "Place this poll on the front page.",
-			'polls:open_poll_label' => "Log user votes.",
+			'polls:open_poll_label' => "Show users votes in results.",
 		/**
 	     * poll widget
 	     **/
